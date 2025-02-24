@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('backgroungd.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    right: 5%;
+}
+
+.logo {
+    width: 150px; /* Increased size to match your image */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex-grow: 1;
+    text-align: center;
+    margin-left: -50px; /* Fine-tuning the center alignment */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 80px;
+}
+
+.menu {
+    background: #ffe5d4;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+.btn {
+    width: 220px;
+    padding: 15px;
+    margin: 10px 0; /* Stacked vertically */
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.green {
+    background: #baff72;
+    color: black;
+}
+
+.red {
+    background: red;
+    color: white;
+}
+
+.description {
+    width: 25%;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    writing-mode: vertical-rl; /* Rotated text */
+    transform: rotate(180deg); /* Flip text correctly */
+}
